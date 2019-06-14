@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+<?php
+
+namespace ${1/(\w+)\//(?1$1:\\)/g};
+//path:${1:app${TM_FILEPATH/.*app(.*)\/\w+\.php$/(?1$1)/g}}
+
+class ${2:${TM_FILENAME/(.*)\.php/\1/g}}
+{
+    public function handle(\$request, \\Closure \$next)
+    {
+        $0
+    }
+}
+
+]]></content>
+<tabTrigger>tp-middleware</tabTrigger>
+<description>生成中间件类</description>
+<scope>embedding.php</scope>
+</snippet>

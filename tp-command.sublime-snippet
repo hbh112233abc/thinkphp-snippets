@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+<?php
+
+namespace ${1/(\w+)\//(?1$1:\\)/g};
+//path:${1:app${TM_FILEPATH/.*app(.*)\/\w+\.php$/(?1$1)/g}}
+
+use think\\console\\Command;
+use think\\console\\Input;
+use think\\console\\Output;
+
+class ${2:${TM_FILENAME/(.*)\.php/\1/g}} extends Command
+{
+    protected function configure()
+    {
+        // 指令配置
+        \$this->setName('${2:${TM_FILENAME/(.*)\.php/\1/g}}');
+        // 设置参数
+        $0
+    }
+
+    protected function execute(Input \$input, Output \$output)
+    {
+        // 指令输出
+        \$output->writeln('${2:${TM_FILENAME/(.*)\.php/\1/g}}');
+    }
+}
+
+]]></content>
+<tabTrigger>tp-command</tabTrigger>
+<description>生成命令行类</description>
+<scope>embedding.php</scope>
+</snippet>
