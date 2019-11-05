@@ -1,0 +1,14 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+protected function set${1:RegisterTime}Attr(\$value,\$data)
+{
+    return ${2:date_time()};
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tp-setattr</tabTrigger>
+  <description>修改器</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>embedding.php</scope>
+</snippet>
