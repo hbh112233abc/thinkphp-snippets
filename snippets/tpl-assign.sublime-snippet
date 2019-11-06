@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+{assign name="${1:name}" value="${2:value}"/}
+]]></content>
+<tabTrigger>assign</tabTrigger>
+<description>模板赋值</description>
+<scope>text.html.basic</scope>
+</snippet>

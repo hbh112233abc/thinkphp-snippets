@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+{include file="${1:public/footer}"/}
+]]></content>
+<tabTrigger>include</tabTrigger>
+<description>模板引入</description>
+<scope>text.html.basic</scope>
+</snippet>

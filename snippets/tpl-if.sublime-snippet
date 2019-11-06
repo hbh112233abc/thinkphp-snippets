@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+{if ${1:表达式}}
+    $2
+{elseif ${3:表达式} /}
+    $4
+{else /}
+    $0
+{/if}
+]]></content>
+<tabTrigger>if</tabTrigger>
+<description>条件判断 if</description>
+<scope>text.html.basic</scope>
+</snippet>

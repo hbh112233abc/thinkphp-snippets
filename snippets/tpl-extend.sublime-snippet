@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+{extend name="${1:public/base}"/}
+{block name="${2:main}"}
+    $0
+{/block}
+]]></content>
+<tabTrigger>extend</tabTrigger>
+<description>模板继承</description>
+<scope>text.html.basic</scope>
+</snippet>

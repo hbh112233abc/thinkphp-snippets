@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+{block name="${1:main}"}
+    $0
+{/block}
+]]></content>
+<tabTrigger>block</tabTrigger>
+<description>模板区块</description>
+<scope>text.html.basic</scope>
+</snippet>

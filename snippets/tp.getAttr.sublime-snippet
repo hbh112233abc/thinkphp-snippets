@@ -1,0 +1,15 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+public function get${1:StatusText}Attr(\$value,\$data)
+{
+    $2
+    return ${3:\$data[]};
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tp-getattr</tabTrigger>
+  <description>获取器</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>embedding.php</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+{between name="${1:name}" value="${2:value}"}
+    $0
+{else /}
+
+{/between}
+]]></content>
+<tabTrigger>between</tabTrigger>
+<description>范围判断 between</description>
+<scope>text.html.basic</scope>
+</snippet>

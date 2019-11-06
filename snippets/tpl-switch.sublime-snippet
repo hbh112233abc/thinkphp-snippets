@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+{switch ${1:变量} }
+    {case ${2:value1} }${3:输出内容1}{/case}
+    {case ${4:value2} }${5:输出内容2}{/case}
+    {default /}${6:默认情况}
+{/switch}
+]]></content>
+<tabTrigger>switch</tabTrigger>
+<description>模板-条件判断switch</description>
+<scope>text.html.basic</scope>
+</snippet>
