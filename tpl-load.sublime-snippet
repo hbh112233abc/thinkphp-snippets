@@ -1,8 +1,0 @@
-<snippet>
-<content><![CDATA[
-{load href="${1:main}"/}
-]]></content>
-<tabTrigger>load</tabTrigger>
-<description>模板-资源引入</description>
-<scope>text.html.basic</scope>
-</snippet>
