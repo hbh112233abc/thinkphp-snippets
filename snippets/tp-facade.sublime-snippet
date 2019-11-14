@@ -1,0 +1,15 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+use think\\facade\\Env;
+use think\\facade\\Config;
+use think\\facade\\Request;
+use think\\facade\\Session;
+use think\\facade\\Cache;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tp-facade</tabTrigger>
+  <description>引入 think\facade类</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>embedding.php</scope>
+</snippet>
