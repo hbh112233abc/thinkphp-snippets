@@ -4,14 +4,12 @@
 namespace ${1/(\w+)\//(?1$1:\\)/g};
 //path:${1:app${TM_FILEPATH/.*app(.*)\/\w+\.php$/(?1$1)/g}}
 use think\\facade\\Request;
-use think\\facade\\View;
 
 class ${2:${TM_FILENAME/(.*)\.php/\1/g}}
 {
     public function index()
     {
         $0
-        return View::fetch();
     }
 }
 

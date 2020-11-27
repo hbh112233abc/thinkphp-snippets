@@ -8,16 +8,14 @@ namespace ${1/(\w+)\//(?1$1:\\)/g};
 use think\\Model;
 
 /**
- * ${2:${TM_FILENAME/(.*)\.php/\1/g}}模型
- *
  * @mixin think\\Model
  */
 class ${2:${TM_FILENAME/(.*)\.php/\1/g}} extends Model
 {
-    //表名
-    protected \$table = "${3:${TM_FILENAME/(.*)\.php/(?1\l$1:)/g}}";
-    //主键
-    protected \$pk = "${4:id}";
+    ////表名
+    \$table = "${3:${TM_FILENAME/(.*)\.php/(?1\l$1:)/g}}";
+    ////主键
+    \$pk = "${4:id}";
     $0
 }
 

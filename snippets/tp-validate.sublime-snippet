@@ -28,6 +28,16 @@ class ${2:${TM_FILENAME/(.*)\.php/\1/g}} extends Validate
     protected \$message = [
         $0
     ];
+
+    /**
+     * 验证场景
+     * 格式: '场景名称' => ['字段数组']
+     *
+     * @var array
+     */
+    protected $scene = [
+        $0
+    ];
 }
 
 ]]></content>

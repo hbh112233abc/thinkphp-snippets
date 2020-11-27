@@ -6,6 +6,8 @@ namespace ${1/(\w+)\//(?1$1:\\)/g};
 //path:${1:app${TM_FILEPATH/.*app(.*)\/\w+\.php$/(?1$1)/g}}
 
 use think\\console\\Command;
+use think\console\input\Argument;
+use think\console\input\Option;
 use think\\console\\Input;
 use think\\console\\Output;
 
@@ -16,6 +18,9 @@ class ${2:${TM_FILENAME/(.*)\.php/\1/g}} extends Command
         // 指令配置
         \$this->setName('${2:${TM_FILENAME/(.*)\.php/\1/g}}');
         // 设置参数
+        //\$this->addArgument('name', Argument::OPTIONAL, "your name") //ex php think ${TM_FILENAME/(.*)\.php/\1/g} hbh
+        //\$this>addOption('city', null, Option::VALUE_REQUIRED, 'city name') //调用 --city amoy
+        //\$this->setDescription('命令描述信息');
         $0
     }
 

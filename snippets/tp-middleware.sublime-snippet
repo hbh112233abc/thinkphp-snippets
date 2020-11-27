@@ -10,7 +10,6 @@ class ${2:${TM_FILENAME/(.*)\.php/\1/g}}
     public function handle(\$request, \\Closure \$next)
     {
         $0
-        return \$next(\$request);
     }
 }
 
