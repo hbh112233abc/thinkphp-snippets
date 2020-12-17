@@ -13,9 +13,9 @@ use think\\Model;
 class ${2:${TM_FILENAME/(.*)\.php/\1/g}} extends Model
 {
     ////表名
-    \$table = "${3:${TM_FILENAME/(.*)\.php/(?1\l$1:)/g}}";
+    protected \$table = "${3:${TM_FILENAME/(.*)\.php/(?1\l$1:)/g}}";
     ////主键
-    \$pk = "${4:id}";
+    protected \$pk = "${4:id}";
     $0
 }
 
